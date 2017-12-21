@@ -1,0 +1,45 @@
+body {
+    background-color: #121212;
+    color: #888;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header h1 {
+    font-family: 'Raleway Dots', cursive;
+    font-size: 35px;
+    min-height: 60px;
+    padding: 10px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+input, select, button {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    margin: 5px;
+}
+form {
+    margin-bottom: 20px;
+}
+pre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    margin:10px auto;
+    color: #55ffc5;
+    padding: 10px;
+    min-height: 25em;
+    width: auto;
+    max-width: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+}

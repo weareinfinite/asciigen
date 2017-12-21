@@ -1,0 +1,18 @@
+doctype html  
+html
+  head
+    title Ascii Generator by Sarath
+    link(href="https://fonts.googleapis.com/css?family=Montserrat|Raleway+Dots" rel="stylesheet")
+    link(rel="stylesheet", href="style.css")
+  body
+    header
+        h1.container #{title}
+    div.container
+        form(action="")
+            input(type="text" name="s" placeholder="Text"  value=`${text}`)
+            select( name="style")
+                each font in fonts
+                    option( selected=( font== style)) #{font}
+            button Go
+        pre #{output}
+    footer Build with all ❤️ in the world By Sarath
