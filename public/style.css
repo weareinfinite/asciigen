@@ -36,6 +36,7 @@ pre {
     min-height: 25em;
     width: auto;
     max-width: 100%;
+    overflow: auto;
 }
 
 footer {
