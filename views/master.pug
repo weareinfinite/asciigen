@@ -14,5 +14,26 @@ html
                 each font in fonts
                     option( selected=( font== style)) #{font}
             button Go
-        pre #{output}
+        pre#output #{output}
+        button#copyClipboard(title="Copy to Clipboard") Copy
     footer Build with all the ❤️ in the world By Sarath
+
+    script.
+     document.addEventListener('DOMContentLoaded', function() {
+
+         var copyButton = document.getElementById('copyClipboard');
+         copyButton.addEventListener('click',copyClipboard);
+
+     })
+
+     function copyClipboard() {
+
+        var outputText = document.getElementById("output");
+        var _temp = document.createElement('textarea');
+        _temp.setAttribute('type','text');
+        _temp.value = outputText.textContent;
+        document.body.appendChild(_temp);
+        _temp.select();
+        document.execCommand("Copy");
+        _temp.remove();
+     }
