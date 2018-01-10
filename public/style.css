@@ -1,3 +1,6 @@
+html {
+    font-size: 16px;
+}
 body {
     background-color: #121212;
     color: #888;
@@ -16,6 +19,7 @@ header h1 {
     text-align: center;
     position: relative;
 }
+
 input, select, button {
     padding: 5px;
     border-radius: 5px;
@@ -34,7 +38,7 @@ pre {
     margin:10px auto;
     color: #55ffc5;
     padding: 10px;
-    min-height: 25em;
+    min-height: 40vh;
     width: auto;
     max-width: 100%;
     overflow: auto;
@@ -54,4 +58,14 @@ footer {
     position: absolute;
     bottom: 0;
     padding-bottom: 10px;
+}
+
+
+@media  (max-width:700px) {
+    html {
+        font-size: 12px;
+    }
+    .container {
+        width:100%;
+    }        
 }

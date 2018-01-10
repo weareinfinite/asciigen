@@ -1,6 +1,8 @@
 doctype html  
 html
   head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     meta(name="description" content="Generate a ASCII art from text")
     meta(name="keywords" content="ASCII,ASCII Generator,ASCII-Generator,signature,email, text hack")
     meta(name="keywords" content="ascii art,ascii converter,ascii art generator,generator,figlet generator")
@@ -41,4 +43,5 @@ html
         _temp.select();
         document.execCommand("Copy");
         _temp.remove();
+        alert('Copied')
      }
