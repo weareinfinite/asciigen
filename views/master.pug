@@ -12,6 +12,12 @@ html
     link(rel="icon" type="image/png" href="favicon.png")
     link(href="https://fonts.googleapis.com/css?family=Montserrat|Raleway+Dots" rel="stylesheet")
     link(rel="stylesheet", href="style.css")
+    script(async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
+    script.
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4788794406223837",
+            enable_page_level_ads: true
+        });
   body
     header
         h1.container #{title}
@@ -24,7 +30,8 @@ html
             button Go
         pre#output #{output}
         button#copyClipboard(title="Copy to Clipboard") Copy
-    footer Build with all the ❤️ in the world By Sarath
+    footer Build with all the ❤️ in the world By 
+        a(href="https://github.com/saratonite") Sarath
 
     script.
      document.addEventListener('DOMContentLoaded', function() {

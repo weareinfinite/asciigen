@@ -6,7 +6,10 @@ body {
     color: #888;
     font-family: 'Montserrat', sans-serif;
 }
-
+a, a:link, a:visited, a:active {
+    color: #ddd;
+    text-decoration: none;
+}
 header h1 {
     font-family: 'Raleway Dots', cursive;
     font-size: 35px;
